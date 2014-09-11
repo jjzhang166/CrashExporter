@@ -1,8 +1,12 @@
 #CrashExporter
 
-CrashExporter是基于开源项目crashrpt基础上改造的、基于Windows平台的一个轻量级的异常信息导出组件。 
+CrashExporter是基于开源项目crashrpt(https://code.google.com/p/crashrpt/)基础上改造的、基于Windows平台的轻量级异常导出组件。 
 
 CrashExporter与crashrpt的区别是：CrashExporter只保留了crashrpt的导出dmp和抓屏功能，并增加了堆栈打印。
+
+支持VC6~VS2010
+
+使用请参考demos目录代码
 
 
 =================================================================

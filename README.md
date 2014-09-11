@@ -1,6 +1,6 @@
 #CrashExporter
 
-CrashExporterÊÇ»ùÓÚ¿ªÔ´ÏîÄ¿crashrpt(https://code.google.com/p/crashrpt/)»ù´¡ÉÏ¸ÄÔìµÄ¡¢»ùÓÚWindowsÆ½Ì¨µÄÇáÁ¿¼¶Òì³£µ¼³ö×é¼ş¡£ 
+CrashExporterÊÇ»ùÓÚ¿ªÔ´ÏîÄ¿crashrpt(https://code.google.com/p/crashrpt/) »ù´¡ÉÏ¸ÄÔìµÄ¡¢»ùÓÚWindowsÆ½Ì¨µÄÇáÁ¿¼¶Òì³£µ¼³ö×é¼ş¡£ 
 
 CrashExporterÓëcrashrptµÄÇø±ğÊÇ£ºCrashExporterÖ»±£ÁôÁËcrashrptµÄµ¼³ödmpºÍ×¥ÆÁ¹¦ÄÜ£¬²¢Ôö¼ÓÁË¶ÑÕ»´òÓ¡¡£
 
@@ -11,7 +11,7 @@ CrashExporterÓëcrashrptµÄÇø±ğÊÇ£ºCrashExporterÖ»±£ÁôÁËcrashrptµÄµ¼³ödmpºÍ×¥ÆÁ¹¦Ä
 
 =================================================================
 
-µ±±ÀÀ£Éú³Éºó»áÔÚ³ÌĞòÖ´ĞĞµÄÄ¿Â¼µÄcrashrptÏÂÔö¼ÓÒ»¸öÒÔ±ÀÀ£Ê±¼äÃüÃûµÄÎÄ¼ş¼Ğ¡£
+µ±³ÌĞò±ÀÀ£ºó£¬»áÔÚ³ÌĞòÖ´ĞĞµÄÄ¿Â¼µÄcrashrptÏÂ£¬Ôö¼ÓÒ»¸öÒÔ±ÀÀ£Ê±¼äÃüÃûµÄÎÄ¼ş¼Ğ¡£
 
 ÎÄ¼ş¼ĞÀïÓĞÈı¸öÎÄ¼ş£º
 

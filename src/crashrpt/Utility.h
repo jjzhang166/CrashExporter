@@ -72,9 +72,9 @@ namespace Utility
 #endif //UNICODE
 
 #ifdef _DEBUG
-#define DbgTrace(...)  OutDebugStr(__VA_ARGS__)
+#define DbgTrace(...)  //OutDebugStr(__VA_ARGS__) //open while you need
 #else
-#define DbgTrace(...)
+#define DbgTrace(...)  
 #endif
 
 };

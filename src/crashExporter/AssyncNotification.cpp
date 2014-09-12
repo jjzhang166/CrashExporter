@@ -1,7 +1,7 @@
 
 #include "stdafx.h"
 #include "AssyncNotification.h"
-#include "strconv.h"
+#include "..\crashrpt\strconv.h"
 
 AssyncNotification::AssyncNotification()
 {

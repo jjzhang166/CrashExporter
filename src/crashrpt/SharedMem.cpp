@@ -3,8 +3,10 @@
 #include "SharedMem.h"
 #include "Utility.h"
 
+using namespace Utility;
+
 #define OutputErrorStr(ErrorStr) \
-	Utility::OutDebugStr(_T("%s%s\n"), _T("[CrashExporter] [CSharedMem] "), ErrorStr)
+	DbgTrace(_T("%s%s\n"), _T("[CrashExporter] [CSharedMem] "), ErrorStr)
 
 CSharedMem::CSharedMem()  
 {

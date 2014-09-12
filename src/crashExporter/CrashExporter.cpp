@@ -5,8 +5,8 @@
 #include "stdafx.h"
 #include "ErrorReportExporter.h"
 #include "CrashInfoReader.h"
-#include "strconv.h"
-#include "Utility.h"
+#include "..\crashrpt\strconv.h"
+#include "..\crashrpt\Utility.h"
 
 CAppModule _Module;             // WTL's application module.
 

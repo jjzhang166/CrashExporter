@@ -1,13 +1,15 @@
 
 #include "stdafx.h"
 #include "ScreenCap.h"
-#include "Utility.h"
+#include "..\crashrpt\Utility.h"
 
 // Disable warning C4611: interaction between '_setjmp' and C++ object destruction is non-portable
 #pragma warning(disable:4611)
 
+using namespace Utility;
+
 #define OutputErrorStr(ErrorStr) \
-	Utility::OutDebugStr(_T("%s%s\n"), _T("[CrashExporter] [CScreenCapture] "), ErrorStr)
+	DbgTrace(_T("%s%s\n"), _T("[CrashExporter] [CScreenCapture] "), ErrorStr)
 
 CScreenCapture::CScreenCapture()
 	: m_fp(NULL), m_png_ptr(NULL), m_info_ptr(NULL), m_nIdStartFrom(0)

@@ -5,12 +5,14 @@
 #include "stdafx.h"
 #include "CrashRpt.h"
 #include "CrashInfoReader.h"
-#include "strconv.h"
-#include "Utility.h"
-#include "SharedMem.h"
+#include "..\crashrpt\strconv.h"
+#include "..\crashrpt\Utility.h"
+#include "..\crashrpt\SharedMem.h"
+
+using namespace Utility;
 
 #define OutputErrorStr(ErrorStr) \
-	Utility::OutDebugStr(_T("%s%s\n"), _T("[CrashExporter] [CCrashInfoReader] "), ErrorStr)
+	DbgTrace(_T("%s%s\n"), _T("[CrashExporter] [CCrashInfoReader] "), ErrorStr)
 
 
 CCrashInfoReader::CCrashInfoReader()

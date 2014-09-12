@@ -7,8 +7,10 @@
 #include "Utility.h"
 #include "strconv.h"
 
+using namespace Utility;
+
 #define OutputErrorStr(ErrorStr) \
-	Utility::OutDebugStr(_T("%s%s\n"), _T("[CrashExporter] [CCrashHandler] "), ErrorStr)
+	DbgTrace(_T("%s%s\n"), _T("[CrashExporter] [CCrashHandler] "), ErrorStr)
 
 #ifndef _AddressOfReturnAddress
 

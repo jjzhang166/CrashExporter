@@ -2,15 +2,17 @@
 #include "stdafx.h"
 #include "ErrorReportExporter.h"
 #include "CrashRpt.h"
-#include "Utility.h"
+#include "..\crashrpt\Utility.h"
 #include "CrashInfoReader.h"
-#include "strconv.h"
+#include "..\crashrpt\strconv.h"
 #include "ScreenCap.h"
 #include <sys/stat.h>
 #include "dbghelp.h"
 
+using namespace Utility;
+
 #define OutputErrorStr(...) \
-	Utility::OutDebugStr(_T("%s%s"), _T("[CrashExporter] [CErrorReportExporter] "), __VA_ARGS__)
+	DbgTrace(_T("%s%s"), _T("[CrashExporter] [CErrorReportExporter] "), __VA_ARGS__)
 
 CErrorReportExporter* CErrorReportExporter::m_pInstance = NULL;
 
@@ -304,8 +306,7 @@ BOOL CErrorReportExporter::CreateCrashInfo()
 	// Check if file has been created
 	if(INVALID_HANDLE_VALUE == hFile )
 	{
-		DWORD dwError = GetLastError();
-		OutputErrorStr(_T("Couldn't create StackWalker file: %s"), Utility::FormatErrorMsg(dwError));
+		OutputErrorStr(_T("Couldn't create StackWalker file: %s"), Utility::FormatErrorMsg(GetLastError()));
 
 		goto cleanup;
 	}
@@ -411,8 +412,7 @@ BOOL CErrorReportExporter::CreateMiniDump()
 	// Check if file has been created
 	if(INVALID_HANDLE_VALUE == hFile)
 	{
-		DWORD dwError = GetLastError();
-		OutputErrorStr(_T("Couldn't create minidump file: %s"), Utility::FormatErrorMsg(dwError));
+		OutputErrorStr(_T("Couldn't create minidump file: %s"), Utility::FormatErrorMsg(GetLastError()));
 
 		return FALSE;
 	}
@@ -482,8 +482,7 @@ BOOL CErrorReportExporter::CreateMiniDump()
 	// Check result
 	if(!bWriteDump)
 	{    
-		DWORD dwError = GetLastError();
-		OutputErrorStr(_T("Error writing dump: %s."), Utility::FormatErrorMsg(dwError));
+		OutputErrorStr(_T("Error writing dump: %s."), Utility::FormatErrorMsg(GetLastError()));
 		goto cleanup;
 	}
 

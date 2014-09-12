@@ -5,7 +5,7 @@
 
 #pragma once
 #include "stdafx.h"
-#include "SharedMem.h"
+#include "..\crashrpt\SharedMem.h"
 #include "ScreenCap.h"
  
 /*!

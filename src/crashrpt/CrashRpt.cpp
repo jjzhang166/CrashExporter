@@ -9,10 +9,12 @@
 #include "Utility.h"
 #include "strconv.h"
 
+using namespace Utility;
+
 HANDLE g_hModuleCrashRpt = NULL; // Handle to CrashRpt.dll module.
 
 #define OutputErrorStr(ErrorStr) \
-	Utility::OutDebugStr(_T("%s%s\n"), _T("[CrashExporter] [CRASHRPTAPI] "), ErrorStr)
+	DbgTrace(_T("%s%s\n"), _T("[CrashExporter] [CRASHRPTAPI] "), ErrorStr)
 
 
 int CRASHRPTAPI crInstallW(CR_INSTALL_INFOW* pInfo)

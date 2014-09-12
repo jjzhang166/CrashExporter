@@ -9,8 +9,10 @@
 #pragma comment(lib, "psapi.lib") 
 #endif
 
+using namespace Utility;
+
 #define OutputErrorStr(ErrorStr) \
-	Utility::OutDebugStr(_T("%s%s\n"), _T("[CrashExporter] [StackWalker] "), ErrorStr)
+	DbgTrace(_T("%s%s\n"), _T("[CrashExporter] [StackWalker] "), ErrorStr)
 
 StackWalker::StackWalker(DWORD dwProcessId, HANDLE hProcess)
 	: m_hProcess(hProcess), m_dwProcessId(dwProcessId)

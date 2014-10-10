@@ -8,9 +8,9 @@ CrashExporterÊÇ»ùÓÚ¿ªÔ´ÏîÄ¿crashrpt(https://code.google.com/p/crashrpt/) »ù´¡ÉÏ¸
 ### 2.	³ÌÐò±ÀÀ£ºó»áÉú³ÉÊ²Ã´£¿
 µ±³ÌÐò±ÀÀ£ºó£¬»áÔÚ³ÌÐòÖ´ÐÐµÄcrashrptÄ¿Â¼ÏÂ£¬Ôö¼ÓÒ»¸öÒÔ±ÀÀ£Ê±¼äÃüÃûµÄÎÄ¼þ¼Ð¡£
 ÎÄ¼þ¼ÐÀïÓÐÈý¸öÎÄ¼þ£º
-	* crashdump.dmpÎªminidumpÎÄ¼þ£»¿ÉÒÔÊ¹ÓÃwindbg¹¤¾ß²é¿´£¨ÐèÒªpdbÎÄ¼þÒ»ÆðÊ¹ÓÃ£¬³£ÓÃÃüÁî.ecxrºÍ!analyze -v£©£¬»òÕßÖ±½ÓÓÃvs2010´ò¿ª¡£
-  	* crashinfo.txtÎª¶ÑÕ»´òÓ¡£»¼ÇÂ¼ÁËÒì³£Ê±ÏµÍ³ÐÅÏ¢ºÍ¶ÑÕ»ÐÅÏ¢´òÓ¡£¬¿ÉÒÔ¶¨Î»µ½´úÂëÎÄ¼þµÄÄ³Ò»ÐÐ¡£
-  	* screenshot0.pngÎªÆÁÄ»½ØÆÁÎÄ¼þ£»×¥È¡±ÀÀ£Ê±µÄÆÁÄ»Í¼Ïñ¡£
+  * crashdump.dmpÎªminidumpÎÄ¼þ£»¿ÉÒÔÊ¹ÓÃwindbg¹¤¾ß²é¿´£¨ÐèÒªpdbÎÄ¼þÒ»ÆðÊ¹ÓÃ£¬³£ÓÃÃüÁî.ecxrºÍ!analyze -v£©£¬»òÕßÖ±½ÓÓÃvs2010´ò¿ª¡£
+  * crashinfo.txtÎª¶ÑÕ»´òÓ¡£»¼ÇÂ¼ÁËÒì³£Ê±ÏµÍ³ÐÅÏ¢ºÍ¶ÑÕ»ÐÅÏ¢´òÓ¡£¬¿ÉÒÔ¶¨Î»µ½´úÂëÎÄ¼þµÄÄ³Ò»ÐÐ¡£
+  * screenshot0.pngÎªÆÁÄ»½ØÆÁÎÄ¼þ£»×¥È¡±ÀÀ£Ê±µÄÆÁÄ»Í¼Ïñ¡£
 
 ### 3.	Ê¹ÓÃCrashExporterÊ±£¬¹¤³ÌÔõÃ´ÅäÖÃ£¿
 Ö÷ÒªÊÇrelease¹¤³ÌµÄÅäÖÃ¡£

@@ -9,24 +9,22 @@ CrashExporterÓëcrashrptµÄÇø±ðÊÇ£ºCrashExporterÖ»±£ÁôÁËcrashrptµÄµ¼³ödmpºÍ×¥ÆÁ¹¦Ä
 µ±³ÌÐò±ÀÀ£ºó£¬»áÔÚ³ÌÐòÖ´ÐÐµÄcrashrptÄ¿Â¼ÏÂ£¬Ôö¼ÓÒ»¸öÒÔ±ÀÀ£Ê±¼äÃüÃûµÄÎÄ¼þ¼Ð¡£
 ÎÄ¼þ¼ÐÀïÓÐÈý¸öÎÄ¼þ£º
 	crashdump.dmpÎªminidumpÎÄ¼þ£»¿ÉÒÔÊ¹ÓÃwindbg¹¤¾ß²é¿´£¨ÐèÒªpdbÎÄ¼þÒ»ÆðÊ¹ÓÃ£¬³£ÓÃÃüÁî.ecxrºÍ!analyze -v£©£¬»òÕßÖ±½ÓÓÃvs2010´ò¿ª¡£
-
 	crashinfo.txtÎª¶ÑÕ»´òÓ¡£»¼ÇÂ¼ÁËÒì³£Ê±ÏµÍ³ÐÅÏ¢ºÍ¶ÑÕ»ÐÅÏ¢´òÓ¡£¬¿ÉÒÔ¶¨Î»µ½´úÂëÎÄ¼þµÄÄ³Ò»ÐÐ¡£
-
 	screenshot0.pngÎªÆÁÄ»½ØÆÁÎÄ¼þ£»×¥È¡±ÀÀ£Ê±µÄÆÁÄ»Í¼Ïñ¡£
 
 ### 3.	Ê¹ÓÃCrashExporterÊ±£¬¹¤³ÌÔõÃ´ÅäÖÃ£¿
 Ö÷ÒªÊÇrelease¹¤³ÌµÄÅäÖÃ¡£
 ¶ÔÓÚVC6¹¤³Ì£º
-	1)	Properties->C/C++->GeneralÖÐµÄDebug info£¬Ñ¡ÔñProgram Database£»
-	2)	ÉèÖÃProperties->C/C++->Code GenerationÖÐµÄUse run-time libraryÎªMultithreaded DLL;
-	3)	Properties->C/C++->linkÖÐ¹´Ñ¡ÉÏGenerate debug info¡£
+	1)Properties->C/C++->GeneralÖÐµÄDebug info£¬Ñ¡ÔñProgram Database£»
+	2)ÉèÖÃProperties->C/C++->Code GenerationÖÐµÄUse run-time libraryÎªMultithreaded DLL;
+	3)Properties->C/C++->linkÖÐ¹´Ñ¡ÉÏGenerate debug info¡£
 
 ¶ÔÓÚvs2010¹¤³Ì£º
-	1)	Ê¹ÓÃ¶àÏß³ÌDLL(/MD)
+	1)Ê¹ÓÃ¶àÏß³ÌDLL(/MD)
 	ÉèÖÃ·½·¨£¬ÓÒ»÷¹¤³Ì£¬Ñ¡ÔñÊôÐÔ->C/C++->´úÂëÉú³É£¬ÔÚµ±Ç°Ò³µÄ¡°ÔËÐÐ¿â¡±ÖÐÑ¡Ôñ¡°¶àÏß³Ì DLL(/MD)¡±¡£
-	2)	ÉèÖÃdebugging symbols (PDBÎÄ¼þ)
+	2)ÉèÖÃdebugging symbols (PDBÎÄ¼þ)
 	ÉèÖÃ·½·¨£¬ÓÒ»÷¹¤³Ì£¬Ñ¡ÔñÊôÐÔ->C/C++->³£¹æ£¬ÔÚµ±Ç°Ò³¡°µ÷ÊÔÐÅÏ¢¸ñÊ½¡±ÖÐÑ¡Ôñ¡°³ÌÐòÊý¾Ý¿â(/Zi)¡±
-	3)	´ò¿ªÁ´½ÓÆ÷µ÷ÊÔ¡°Éú³Éµ÷ÊÔÐÅÏ¢¡±¹¦ÄÜ
+	3)´ò¿ªÁ´½ÓÆ÷µ÷ÊÔ¡°Éú³Éµ÷ÊÔÐÅÏ¢¡±¹¦ÄÜ
 	ÉèÖÃ·½·¨£¬ÓÒ»÷¹¤³Ì£¬Ñ¡ÔñÊôÐÔ->Á´½ÓÆ÷->µ÷ÊÔ£¬ÔÚµ±Ç°Ò³¡°Éú³Éµ÷ÊÔÐÅÏ¢¡±ÖÐÑ¡Ôñ¡°ÊÇ(/DEBUG)¡±¡£
 
 ### 4.	MFC ³ÌÐòÖÐÈçºÎÊ¹ÓÃCashExporter£¿
@@ -53,14 +51,14 @@ CrashExporterÓëcrashrptµÄÇø±ðÊÇ£ºCrashExporterÖ»±£ÁôÁËcrashrptµÄµ¼³ödmpºÍ×¥ÆÁ¹¦Ä
 
 ### 7.	CrashExporterÖ§³Ö³ÌÐò×Ô¶¯ÖØÆôÃ´£¿
 Ö§³Ö¡£ ³ÌÐòÖØÆôÐèÒªÁ½¸öÌõ¼þ£º
-1£©³ÌÐòÔËÐÐÐèÒª³¬¹ý1·ÖÖÓ¡£
-2£©ÐèÒªÉèÖÃÁËCR_INSTALL_INFOÖÐdwFlags|CR_INST_APP_RESTART¡£
+	1£©³ÌÐòÔËÐÐÐèÒª³¬¹ý1·ÖÖÓ¡£
+	2£©ÐèÒªÉèÖÃÁËCR_INSTALL_INFOÖÐdwFlags|CR_INST_APP_RESTART¡£
 
 ### 8.	µ±³ÌÐò·¢²¼Ê±£¬ÎÒÐèÒª´ò°ü½øÄÄÐ©¶«Î÷£¿
 ÄãÖÁÉÙÐèÒª´ò°ü½øÈý¸ö¶«Î÷£º
-	?	CrashRpt.dll
-	?	CrashExporter.exe
-	?	dbghelp.dll
+	CrashRpt.dll
+	CrashExporter.exe
+	dbghelp.dll
 ÁíÍâ£¬ÄãÒ²±ØÐëÈ·±£¿Í»§»úÆ÷°²×°ÁËvs2010ÔËÐÐ¿â¡£Ã»ÓÐµÄ»°£¬¿ÉÒÔÈÃ¿Í»§°²×°vs2010ÔËÐÐ¿â£¬»òÕß´ò°ümsvcp100.dllºÍmsvcr100.dll¡£
 
 ### 9.	ÎÒµÄ³ÌÐòÊÇÒ»¸öDLL£¬ÕâÖÖÇé¿öÏÂÔõÃ´Ê¹ÓÃCrashExporter£¿
@@ -91,43 +89,14 @@ CrashRpt.dll ºÍ CrashExporter.exeÊ¹ÓÃ¹²ÏíÄÚ´æ´«µÝÊý¾Ý¡£
 ### 15.	Ó¦¸ÃÓÃÊ²Ã´ÀàÐÍµÄminidump£¿
 ½¨ÒéÓÃMiniDumpNormal£¬ÒòÎªMiniDumpNormal°üº¬ÁËÎÒÃÇ¸ÐÐËÈ¤µÄÃ¿¸öÏß³Ì¶ÑÕ»ÐÅÏ¢¡£
 
-### 16.	Ê²Ã´ÊÇÒì³££¿
-Òì³££¨»òÕßËµ¹Ø¼üÐÔ´íÎó¡¢±ÀÀ££©Ò»°ãÀ´ËµÊÇÄãµÄ³ÌÐòÔËÐÐ²»Õý³££¬´Ó¶ø²»µÃ²»Í£Ö¹ÔËÐÐµÄÇé¿ö¡£±ÈÈçËµ£¬Èç¹ûÄãµÄ³ÌÐò·ÃÎÊÒ»¿éÎÞÐ§µÄÄÚ´æµØÖ·£¨ÈçNULLÖ¸Õë£©¡¢ÎÞ·¨·ÖÅäÒ»¸öBuffer£¨ÄÚ´æ²»×ã£©¡¢CÓïÑÔ¿âµÄÔËÐÐÊ±£¨C run-time libraries£¬CRT£©·¢ÏÖÒ»¸ö´íÎó£¬²¢ÇÒÐèÒª³ÌÐòÁ¢¼´Í£Ö¹ÔËÐÐµÈµÈ£¬ÕâÐ©Çé¿öÏÂ¶¼»á²úÉúÒ»¸öÒì³£¡£
-
-### 17.	ÄÄÐ©Çé¿ö¶¼»áµ¼ÖÂÒì³££¿
-	? ³ÌÐò·ÃÎÊÁËÒ»¿é·Ç·¨µÄÄÚ´æµØÖ·£¨±ÈÈçNULLÖ¸Õë£©.
-	?ÔÚÎÞÏÞµÝ¹éÖÐ£¬Õ»Òç³ö.
-	?´ó¿éÊý¾Ý±»Ð´ÈëÒ»Æ¬Ð¡»º³åÇø
-	?C++ÀàÖÐµÄ´¿Ðéº¯Êý±»µ÷ÓÃ
-	?ÄÚ´æÎÞ·¨·ÖÅä£¨ÄÚ´æ²»×ã£©
-	?ÏòC++µÄÏµÍ³º¯ÊýÖÐ´«Èë·Ç·¨µÄ²ÎÊý
-	?CÔËÐÐ¿âÓöµ½´íÎó£¬ÐèÒªÍ£Ö¹³ÌÐòÔËÐÐ
+### 16.	ÄÄÐ©Çé¿ö¶¼»áµ¼ÖÂÒì³££¿
+	³ÌÐò·ÃÎÊÁËÒ»¿é·Ç·¨µÄÄÚ´æµØÖ·£¨±ÈÈçNULLÖ¸Õë£©.
+	ÔÚÎÞÏÞµÝ¹éÖÐ£¬Õ»Òç³ö.
+	´ó¿éÊý¾Ý±»Ð´ÈëÒ»Æ¬Ð¡»º³åÇø
+	C++ÀàÖÐµÄ´¿Ðéº¯Êý±»µ÷ÓÃ
+	ÄÚ´æÎÞ·¨·ÖÅä£¨ÄÚ´æ²»×ã£©
+	ÏòC++µÄÏµÍ³º¯ÊýÖÐ´«Èë·Ç·¨µÄ²ÎÊý
+	CÔËÐÐ¿âÓöµ½´íÎó£¬ÐèÒªÍ£Ö¹³ÌÐòÔËÐÐ
 	Ö÷ÒªÓÐÁ½ÖÖÀàÐÍµÄÒì³££ºSEHÒì³££¨½á¹¹»¯Òì³£´¦Àí£©ºÍ±ê×¼C++Òì³£
 
-### 18.	¼òÊö²¶»ñSEHÒì³£ºÍ±ê×¼C++Òì³£¡£
-½á¹¹»¯Òì³£´¦ÀíÏµÍ³ÊÇÓÉ²Ù×÷ÏµÍ³Ìá¹©µÄ£¨ÕâÒâÎ¶×ÅËùÓÐµÄWindows³ÌÐò¶¼ÄÜ²úÉúºÍ´¦ÀíSEHÒì³££©¡£SEHÒì³£×î³õÊÇÎªCÓïÑÔÉè¼ÆµÄ£¬µ«ÔÚC++ÖÐÒ²¿ÉÒÔÊ¹ÓÃ¡£
-SEHÒì³£ÊÇÍ¨¹ý try{} except(){} ÕâÑùµÄ½á¹¹À´´¦ÀíµÄ¡£³ÌÐòÖÐµÄ main() º¯Êý¾Í±»ÕâÑùµÄ½á¹¹°üÎ§×Å£¬ËùÒÔËùÓÐÃ»ÓÐ±»´¦ÀíµÄSEHÒì³£Ä¬ÈÏ¶¼»á±»²¶»ñ£¬»ªÉúÒ½Éú»áµ¯³öÀ´¡£ SEHÒì³£´¦ÀíÊÇÓÉVisual C++±àÒëÆ÷Ö¸¶¨µÄ¡£Èç¹ûÄãÒªÐ´¼æÈÝÐÔÇ¿µÄ´úÂë£¬ÄãÓ¦¸ÃÔÚSEH½á¹¹Á½¶Ë¼ÓÉÏ#ifdef/#endif£¨¾ÍÊÇËµÈç¹ûSEHÃ»±»¶¨Òå£¬ÄÇÃ´SEHµÄ´úÂë¾Í²»Òª²ÎÓë±àÒë£©¡£
- Ê¾Àý´úÂëÈçÏÂ£º
-	int* p = NULL;   // pointer to NULL
-	__try
-	{
-	    // Guarded code
-	    *p = 13; // causes an access violation exception
-	}
-	__except(EXCEPTION_EXECUTE_HANDLER) // Here is exception filter expression
-	{
-	    // Here is exception handler
-	    // Terminate program
-	    ExitProcess(1);
-	}
-C++ÐÎÊ½µÄÒì³£´¦ÀíÏµÍ³ÊÇÓÉÊÇÓÉCÔËÐÐÊ±¿âÌá¹©µÄ£¨ÕâÒâÎ¶×ÅÖ»ÓÐC++³ÌÐò¿ÉÒÔ²úÉúºÍ´¦ÀíÕâÖÖÒì³££©¡£C++ÐÎÊ½Òì³£´¦ÀíÊÇÍ¨¹ýtry{} catch{}ÕâÑùµÄ½á¹¹À´´¦ÀíµÄ¡£ 
-Ê¾ÀýµÄ´úÂëÈçÏÂ£º
-	try
-	{
-	    throw 20;
-	}
-	catch (int e)
-	{
-	    cout << "An exception occurred. Exception Nr. " << e << endl;
-	}
 

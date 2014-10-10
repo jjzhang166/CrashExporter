@@ -3,14 +3,14 @@
 ### 1.	CrashExporter是什么？ 
 CrashExporter是基于开源项目crashrpt(https://code.google.com/p/crashrpt/) 基础上改造的、基于Windows平台的轻量级异常导出组件。
 原crashrpt 主要将远端的崩溃信息压缩包通过网络发送到本地，而往往我们希望崩溃信息只在本地生成。同时crashrpt 没有生成我们感兴趣的堆栈打印文件。
-`CrashExporter`与`CrashExporter`的区别是：`CrashExporter`只保留了crashrpt的导出dmp和抓屏功能，并增加了堆栈打印功能。
+`CrashExporter`与`crashrpt`的区别是：`CrashExporter`只保留了crashrpt的导出dmp和抓屏功能，并增加了堆栈打印功能。
 
 ### 2.	程序崩溃后会生成什么？
 当程序崩溃后，会在程序执行的crashrpt目录下，增加一个以崩溃时间命名的文件夹。
 文件夹里有三个文件：
-  * crashdump.dmp为minidump文件；可以使用windbg工具查看（需要pdb文件一起使用，常用命令.ecxr和!analyze -v），或者直接用vs2010打开。
-  * crashinfo.txt为堆栈打印；记录了异常时系统信息和堆栈信息打印，可以定位到代码文件的某一行。
-  * screenshot0.png为屏幕截屏文件；抓取崩溃时的屏幕图像。
+	* crashdump.dmp为minidump文件；可以使用windbg工具查看（需要pdb文件一起使用，常用命令.ecxr和!analyze -v），或者直接用vs2010打开。
+  	* crashinfo.txt为堆栈打印；记录了异常时系统信息和堆栈信息打印，可以定位到代码文件的某一行。
+  	* screenshot0.png为屏幕截屏文件；抓取崩溃时的屏幕图像。
 
 ### 3.	使用CrashExporter时，工程怎么配置？
 主要是release工程的配置。

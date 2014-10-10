@@ -15,7 +15,12 @@
 #define _WTL_USE_CSTRING
 #include <atlmisc.h>
 
+#if _MSC_VER == 1200
+#include "dbghelp_VC6.h"
+#else
 #include "dbghelp.h"
+#endif
+
 
 #include <Psapi.h>
 #include <tlhelp32.h>

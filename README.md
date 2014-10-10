@@ -29,10 +29,10 @@ CrashExporterÊÇ»ùÓÚ¿ªÔ´ÏîÄ¿crashrpt(https://code.google.com/p/crashrpt/) »ù´¡ÉÏ¸
 
 ### 4.	MFC ³ÌĞòÖĞÈçºÎÊ¹ÓÃCashExporter£¿
 Äã¿ÉÒÔÖØĞ´CWinApp::Run()£¬ÔÚRunº¯ÊıÀï°²×°CrashExporter¡£´úÂëÀàËÆÈçÏÂ£º
+
 	int CYourApp::Run() 
 	{
 	  // Call your crInstall code here ...
-
 	  BOOL bRun;
 	  BOOL bExit=FALSE;
 	  while(!bExit)

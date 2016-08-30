@@ -1,4 +1,3 @@
-
 #include "stdafx.h"
 #include "ErrorReportExporter.h"
 #include "CrashRpt.h"
@@ -45,8 +44,8 @@ BOOL CErrorReportExporter::Init(LPCTSTR szFileMappingName)
 		OutputErrorStr(_T("Error reading crash info"));
 		return FALSE;
 	}
-
-	CString     sCrashReportsFolder = _T("crashrpt"); // Path to CrashReports folder for the application.
+    
+    CString sCrashReportsFolder = Utility::GetModulePath(NULL) + _T("\\crashrpt"); // Path to CrashReports folder for the application.
 	// Create CrashReports folder (if doesn't exist yet).
 	BOOL bCreateFolder = Utility::CreateFolder(sCrashReportsFolder);
 	if(!bCreateFolder)
@@ -677,5 +676,3 @@ int CErrorReportExporter::TerminateAllcrashExporterProcesses()
 
 	return 0;
 }
-
-
